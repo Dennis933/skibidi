@@ -1,0 +1,534 @@
+body{
+    margin: 0px;
+    font-family: 'segoe ui';
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    height: 5px;
+}
+.nav {
+    height: 55px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  form {
+    background-color: #c0c8ca;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.input1{
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.input2{
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 250px;
+}
+.remove-button{
+    background-color: red;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 12.5px;
+    color: white;
+}
+button {
+    background-color: #2e4156;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 12.5px;
+    color: white;
+}
+
+button:hover {
+    background-color: #1a2d42;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 900%;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    text-align: center;
+    font-size: 150%;
+}
+.karte{
+  margin-left: 0px;
+}
+@media(max-width: 1000px)
+{
+  .innerdiv
+  {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 800px)
+{
+  .innerdiv
+  {
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 600px)
+{
+  .div1 {
+    background-position-x: 10rem;
+  }
+  .innerdiv
+  {
+    display: flex; 
+    flex-direction: column;
+    transform: scale(1);
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+  .attribution
+  {
+    position: relative;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+a {
+padding: 10px;
+display: inline-block;
+}
+}
+@media (min-width: 767px) {
+  body {
+      font-size: 14px;
+  }
+
+  .h1 {
+      width: 100vw;
+  }
+
+  p {
+      font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+      font-size: 16px; 
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+  .outerdiv{
+    width: auto;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+      font-size: 18px; 
+  }}    
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .grund-bild{
+    display: hide;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+@media (min-width: 480px) {
+  .grund p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+  }
+}
+@media (min-width: 600px) {
+  .innerdiv .eachdiv {
+      margin: 0 auto;
+  }
+}
+
+@media (min-width:375px){
+  .grund-bild{
+    width: 100px;
+    height: 100px;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset
+              margin-top: 60%;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+  .ende{
+    margin-top: 100%;
+  }
+} 
+@media (min-width:425px){
+  .grund-bild{
+    width: 100px;
+    height: 100px;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset
+              margin-top: 60%;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+} 
+@media (min-width:768px){
+  .grund-bild{
+    width: 200px;
+    height: 220px;
+    left: auto;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+  .ende{
+    margin-top: 60%;
+  }
+}
+.grund-link{
+  text-align: center;
+  margin: 20px;
+}
+.fdsiug{
+  font-size: large;
+}
+@media (min-width:1024px){
+  .grund-bild{
+    width: 200px;
+    height: 220px;
+    margin-left: 15vw;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset
+              margin-top: 60%;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+} 
+@media (min-width:1440px){
+  .grund-bild{
+    width: 400px;
+    height: 420px;
+    margin-left: 12vw;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset
+              margin-top: 60%;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+} 
+
+@media (max-width:320px){
+  .grund-bild{
+    width: 100px;
+    height: 100px;
+    margin-left: 10vw;
+  }
+  .slide-top {
+    -webkit-animation: unset;
+            animation: unset;
+              margin-top: 30%;
+              font-size: large;
+  }
+  .slide-fwd-center {
+    -webkit-animation: unset;
+            animation: unset;
+            margin-top: 60px;
+  }
+  h1{
+    font-size: 150%;
+  }
+  .ende{
+    margin-top: 110vw;
+  }
+}
+body {
+  margin: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+.nav {
+  height: 55px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+  }
+  .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+  }
+  .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+  }
+}
+
+form {
+  background-color: #c0c8ca;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.input1,
+.input2 {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+button:hover {
+  background-color: #1a2d42;
+}
+
+.karte iframe {
+  width: 100%;
+  height: 350px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+      font-size: 1.5rem;
+  }
+  button {
+      padding: 15px;
+  }
+}
