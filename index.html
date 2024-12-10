@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+      <div class="intro-animation">
+    <h1 class="logo-text">Eiscafe-Da-Marco</h1>
+</div>
     <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
@@ -162,7 +165,23 @@
       </section>
     </div>
 
-
+<script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const intro = document.querySelector('.intro-animation');
+          const body = document.querySelector('body');
+  
+          // Füge intro-active Klasse zum Body hinzu
+          body.classList.add('intro-active');
+  
+          // Starte die Fade-out Animation
+          intro.classList.add('fade-out');
+          
+          // Entferne die intro-active Klasse nach der Animation
+          setTimeout(() => {
+              body.classList.remove('intro-active');
+          }, 2500);
+      });
+  </script>
 
 </body>
 </html>
